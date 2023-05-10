@@ -9,42 +9,42 @@ const Skills = () => {
         <Col sm={4} style={{ maxWidth: "300px" }}>
           <ListGroup>
             <ListGroup.Item>
-              <i class="fa-brands fa-html5" /> HTML
+              <i className="fa-brands fa-html5" /> HTML
             </ListGroup.Item>
             <ListGroup.Item>
-              <i class="fa-brands fa-css3-alt" /> CSS
+              <i className="fa-brands fa-css3-alt" /> CSS
             </ListGroup.Item>
             <ListGroup.Item>
-              <i class="fa-brands fa-bootstrap" /> Bootstrap
-            </ListGroup.Item>
-          </ListGroup>
-        </Col>
-        <Col sm={4} style={{ maxWidth: "300px" }}>
-          <ListGroup>
-            <ListGroup.Item>
-              <i class="fa-brands fa-js" /> JavaScript
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <i class="fa-brands fa-react" /> React / Redux
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <i class="fa-brands fa-git" /> Git
+              <i className="fa-brands fa-bootstrap" /> Bootstrap
             </ListGroup.Item>
           </ListGroup>
         </Col>
         <Col sm={4} style={{ maxWidth: "300px" }}>
           <ListGroup>
             <ListGroup.Item>
-              <i class="fa-brands fa-node-js" /> NodeJS
+              <i className="fa-brands fa-js" /> JavaScript
             </ListGroup.Item>
             <ListGroup.Item>
-              <i class="fa-solid fa-e" /> Express
+              <i className="fa-brands fa-react" /> React / Redux
             </ListGroup.Item>
             <ListGroup.Item>
-              <i class="fa-solid fa-leaf" /> MongoDB
+              <i className="fa-brands fa-git" /> Git
+            </ListGroup.Item>
+          </ListGroup>
+        </Col>
+        <Col sm={4} style={{ maxWidth: "300px" }}>
+          <ListGroup>
+            <ListGroup.Item>
+              <i className="fa-brands fa-node-js" /> NodeJS
             </ListGroup.Item>
             <ListGroup.Item>
-              <i class="fa-solid fa-m" /> Mongoose
+              <i className="fa-solid fa-e" /> Express
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <i className="fa-solid fa-leaf" /> MongoDB
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <i className="fa-solid fa-m" /> Mongoose
             </ListGroup.Item>
           </ListGroup>
         </Col>
