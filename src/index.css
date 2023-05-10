@@ -84,6 +84,18 @@ h3 {
   border-color: black;
 }
 
+.main-icon {
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+  color: #252525;
+}
+
+.main-icon:hover {
+  cursor: pointer;
+  color: #5a5a5a;
+}
+
 .photo {
   max-width: 500px;
   border: 3px solid hsla(0, 0%, 12%, 0.63);
@@ -239,6 +251,7 @@ h3 {
 }
 
 .contact h5 {
+  margin-top: 20px;
   color: #252525;
   font-size: 20px;
 }
