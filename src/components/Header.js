@@ -3,10 +3,14 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <Navbar className="nav-box" bg="dark" variant="dark">
-      <Container className="nav-wrap">
-        <Navbar.Brand href="/">DH</Navbar.Brand>
-        <Nav className="me-auto">
+    <Navbar className="nav-box">
+      <Container className="brand-wrap">
+        <Navbar.Brand className="brand" href="/">
+          DH
+        </Navbar.Brand>
+      </Container>
+      <Container className="menu-wrap">
+        <Nav className="mx-auto">
           <Nav.Link href="#about">About</Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>
           <Nav.Link href="#contact">Contact</Nav.Link>

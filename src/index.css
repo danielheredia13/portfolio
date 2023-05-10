@@ -4,56 +4,181 @@
 }
 
 body {
-  width: 80vw;
-  max-width: 1260px;
-  margin: 0 auto;
-  background-color: #d3ebff;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  color: black;
 }
 
 h3 {
   margin-top: 50px;
   margin-bottom: 20px;
-}
-
-/* Header.css */
-
-.nav-box {
-  border: none;
-  color: #cecece;
-  background-color: #132b50 !important;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.nav-wrap {
-  margin: 0;
-  height: 30px;
-}
-
-.home {
-  padding: 50px 0;
+  color: #ef402f;
   text-align: center;
 }
 
-/* Main.css */
+/* Header */
+
+.nav-box {
+  border: none;
+  background-color: #ef402f !important;
+}
+
+.brand-wrap {
+  padding-left: 20%;
+
+  font-weight: 600;
+}
+
+.brand {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding-left: 2px;
+}
+
+.menu-wrap {
+  font-weight: 600;
+}
+
+/* Main */
+
+.home {
+  padding: 50px 20%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ef402f;
+}
 
 .home h1 {
-  font-size: 48px;
+  font-size: 55px;
+  font-weight: 700;
+  color: rgb(17, 17, 17);
+}
+
+.home-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-info p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(17, 17, 17);
+}
+
+.main-btn {
+  font-weight: 600;
+  color: #282828;
+  border-color: #282828;
+  border-radius: 0px;
+  max-width: 200px;
   margin-top: 20px;
+}
+
+.main-btn:hover {
+  background-color: #f15143 !important;
+  color: black;
+  border-color: black;
+}
+
+.photo {
+  max-width: 500px;
+  border: 3px solid hsla(0, 0%, 12%, 0.63);
+  border-radius: 250px;
+  filter: saturate(0.3);
+  opacity: 0.85;
+}
+
+@media (max-width: 1300px) {
+  .photo {
+    max-width: 350px;
+    border-radius: 175px;
+  }
+}
+
+@media (max-width: 850px) {
+  .brand-wrap {
+    padding-left: 5%;
+  }
+  .home {
+    padding: 50px 10%;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .home-info {
+    margin: 0px auto;
+  }
+  .photo {
+    margin: 30px auto 0px;
+    max-width: 250px;
+    border-radius: 125px;
+  }
+  .main-btn {
+    margin: 20px auto 0px;
+  }
 }
 
 /* About*/
 
-.about-text {
-  width: 50vw;
-  margin: 0 auto;
+#about {
+  padding: 0 25% 40px;
 }
 
-/* Projects.css */
+#about h3 {
+  color: #ef402f;
+}
+
+.about-text {
+  text-align: justify;
+}
+
+/* Skills.css */
+
+.skills-wrap {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-color: #282828;
+}
+
+.skills-wrap h3 {
+  color: #ef402f;
+  margin-top: 0px;
+}
+
+.skills {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.list-group-item {
+  background-color: #282828;
+}
+
+/* Projects */
+
+#projects {
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #c4c4c4;
+}
+
+#projects h3 {
+  margin-top: 0px;
+}
 
 .project {
   margin-bottom: 50px;
   padding: 20px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #c4c4c4;
+  border: 2px solid #ef402f;
 }
 
 .project-img {
@@ -61,28 +186,36 @@ h3 {
   margin-left: 20px;
 }
 
+.project-title {
+  font-weight: 600;
+  color: #000;
+}
+
 .project-body {
   padding: 20px;
 }
 .project-text {
   text-align: justify;
+  font-weight: 500;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: #000;
 }
 
 .link {
   padding: 4px 8px;
-  font-weight: 500;
-  color: rgb(65, 65, 65);
-  text-decoration: underline #fff;
-  border: solid 1px black;
-  border-radius: 4px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-decoration: underline #c4c4c4;
 
   transition: 0.2s ease-out;
 }
 .link:hover {
-  color: black;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12), 2px 3px 3px rgba(0, 0, 0, 0.24);
+  color: #ffffff;
+}
+
+.tech-title {
+  color: #000;
 }
 
 .tech {
@@ -95,15 +228,34 @@ h3 {
   line-height: 1.42;
 
   background-color: #eee;
-  color: #5a5a5a;
+  color: #000000;
   border: 1px solid rgb(122, 122, 122);
 }
 
-/* Skills.css */
+/* Contact*/
 
-.skills {
-  display: flex;
-  justify-content: center;
+.contact {
+  text-align: center;
+}
+
+.contact h5 {
+  color: #252525;
+  font-size: 20px;
+}
+
+.contact-btn {
+  font-weight: 600;
+  color: #ef402f;
+  border: 2px solid #ef402f;
+  border-radius: 0px;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.contact-btn:hover {
+  color: black;
+  border-color: black;
+  background-color: #ffffff !important;
 }
 
 /* Footer*/
@@ -111,23 +263,7 @@ h3 {
 .footer {
   margin-top: 40px;
   margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 30px;
   color: #5a5a5a;
-}
-
-/* Bootstrap overrides */
-
-.row {
-  padding: 0 10px;
-}
-
-.list-group {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.card {
-  transition: 0.2s ease-out;
-}
-
-.card:hover {
-  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }

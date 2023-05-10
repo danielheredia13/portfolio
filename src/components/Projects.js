@@ -52,7 +52,9 @@ const Projects = () => {
           </Col>
           <Col lg={4}>
             <Card.Body className="project-body">
-              <Card.Title>Full-Stack MERN Ecommerce</Card.Title>
+              <Card.Title className="project-title">
+                Full-Stack MERN Ecommerce
+              </Card.Title>
               <Card.Text className="project-text">
                 A full-stack React and Node application that allows users to
                 register and login to their accounts, add items to their cart,
@@ -78,7 +80,7 @@ const Projects = () => {
           </Col>
           <Col lg={4}>
             <Card.Body className="project-body">
-              <Card.Title>Technologies used:</Card.Title>
+              <Card.Title className="tech-title">Technologies used:</Card.Title>
               <div>
                 {Technologies1.map((t, i) => (
                   <p className="tech" key={i}>
@@ -97,7 +99,9 @@ const Projects = () => {
           </Col>
           <Col lg={4}>
             <Card.Body className="project-body" lg={4}>
-              <Card.Title>Full-Stack MERN Movie Finder</Card.Title>
+              <Card.Title className="project-title">
+                Full-Stack MERN Movie Finder
+              </Card.Title>
               <Card.Text className="project-text">
                 A full-stack React and Node application that allows users to
                 register and login to their accounts, search for movies, add
@@ -123,7 +127,7 @@ const Projects = () => {
 
           <Col lg={4}>
             <Card.Body className="project-body">
-              <Card.Title>Technologies used:</Card.Title>
+              <Card.Title className="tech-title">Technologies used:</Card.Title>
               <div>
                 {Technologies2.map((t, i) => (
                   <p className="tech" key={i}>
