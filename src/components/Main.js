@@ -22,7 +22,7 @@ const Main = () => {
           >
             Get in Touch
           </Button>
-    <div>
+          <div>
             <a target="_blank" href="https://github.com/danielheredia13">
               <i className="fa-brands fa-github main-icon" />
             </a>
