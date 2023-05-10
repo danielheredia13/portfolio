@@ -22,6 +22,17 @@ const Main = () => {
           >
             Get in Touch
           </Button>
+    <div>
+            <a target="_blank" href="https://github.com/danielheredia13">
+              <i className="fa-brands fa-github main-icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/daniel-jose-heredia-rincon-711b5063"
+              target="_blank"
+            >
+              <i className="fa-brands fa-linkedin main-icon" />
+            </a>
+          </div>
         </div>
         <img className="photo" src={dhimg} alt="profile-photo" />
       </main>
